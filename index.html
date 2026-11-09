@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>沈知远 · 个人主页</title>
+  <meta name="description" content="沈知远的个人主页：在设计与代码之间，做有温度的数字产品。">
+  <meta name="theme-color" content="#f1ebdf">
+  <meta property="og:title" content="沈知远 · 个人主页">
+  <meta property="og:description" content="在秩序与意外之间，做有温度的数字产品。">
+  <meta property="og:type" content="website">
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="assets/fonts.css">
+  <link rel="stylesheet" href="assets/styles.css">
+
+  <script>
+    // 在样式加载前恢复夜读偏好，避免闪白
+    (function () {
+      try {
+        if (localStorage.getItem("fieldnotes-theme") === "night") {
+          document.documentElement.setAttribute("data-theme", "night");
+          var meta = document.querySelector('meta[name="theme-color"]');
+          if (meta) meta.setAttribute("content", "#151612");
+        }
+      } catch (error) {}
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到正文</a>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="masthead" id="masthead"></header>
+
+  <main id="main" tabindex="-1"></main>
+
+  <footer class="site-footer" id="site-footer"></footer>
+
+  <div class="project-preview" id="project-preview" aria-hidden="true"></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <noscript>
+    <div class="noscript">
+      <p>这个页面用一点 JavaScript 来排版。</p>
+      <p>请开启 JavaScript 后重新载入，即可阅读。</p>
+    </div>
+  </noscript>
+
+  <script src="content.js" defer></script>
+  <script src="app.js" defer></script>
+</body>
+</html>
