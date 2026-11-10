@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" role="img" aria-labelledby="title desc">
+  <title id="title">小满 · 节气菜市场小志</title>
+  <desc id="desc">一本摊开的独立出版物，左页是小满专题，右页是一幅绿色田垄与红色日轮的插图。</desc>
+
+  <rect width="1600" height="1000" fill="#21352c"/>
+  <rect x="0" y="0" width="1600" height="1000" fill="#16291f" opacity="0.2"/>
+
+  <!-- table registration marks -->
+  <g fill="none" stroke="#f1ebdf" stroke-opacity="0.28" stroke-width="1">
+    <path d="M58 92 V58 H92"/>
+    <path d="M1508 58 H1542 V92"/>
+    <path d="M58 908 V942 H92"/>
+    <path d="M1508 942 H1542 V908"/>
+  </g>
+
+  <!-- book shadow -->
+  <rect x="154" y="86" width="1294" height="834" fill="#0f1e16"/>
+
+  <!-- left page -->
+  <rect x="140" y="72" width="658" height="834" fill="#f1ebdf"/>
+  <rect x="140" y="72" width="658" height="834" fill="none" stroke="#1c1b17" stroke-width="2"/>
+
+  <!-- right page -->
+  <rect x="798" y="72" width="658" height="834" fill="#f1ebdf"/>
+  <rect x="798" y="72" width="658" height="834" fill="none" stroke="#1c1b17" stroke-width="2"/>
+
+  <!-- fold -->
+  <line x1="798" y1="76" x2="798" y2="902" stroke="#1c1b17" stroke-opacity="0.18" stroke-width="3"/>
+  <line x1="800" y1="76" x2="800" y2="902" stroke="#f1ebdf" stroke-width="2"/>
+
+  <!-- red bookmark -->
+  <path d="M892 72 H936 V186 L914 168 L892 186 Z" fill="#a93e2c"/>
+
+  <!-- left typography -->
+  <text x="192" y="145" fill="#a93e2c" font-family="IBM Plex Mono, Consolas, monospace" font-size="12" letter-spacing="2">菜 市 场 小 志 · 第 03 期</text>
+  <text x="192" y="183" fill="#6f6659" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="13" letter-spacing="3">立夏 — 小满</text>
+
+  <circle cx="680" cy="304" r="132" fill="#a93e2c"/>
+  <text x="184" y="472" fill="#1c1b17" font-family="Songti SC, SimSun, serif" font-size="218" letter-spacing="-12">小满</text>
+
+  <line x1="192" y1="516" x2="746" y2="516" stroke="#1c1b17" stroke-opacity="0.35"/>
+
+  <text x="192" y="560" fill="#1c1b17" font-family="Songti SC, SimSun, serif" font-size="28" letter-spacing="1">把一年切成二十四份，只记当季。</text>
+  <g fill="#554f45" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="14">
+    <text x="192" y="600">不写餐厅，不写评分，只写这个月里</text>
+    <text x="192" y="624">真正出现在摊位上的东西。它们的名字、</text>
+    <text x="192" y="648">价格、来路，以及一位摊主多送的一把葱。</text>
+  </g>
+
+  <line x1="192" y1="690" x2="746" y2="690" stroke="#1c1b17" stroke-opacity="0.25"/>
+
+  <g font-family="PingFang SC, Microsoft YaHei, sans-serif">
+    <text x="192" y="719" fill="#a93e2c" font-size="11" letter-spacing="2">这 个 月 的 摊 位</text>
+    <text x="192" y="757" fill="#1c1b17" font-family="Songti SC, SimSun, serif" font-size="24">蚕豆</text>
+    <text x="458" y="757" fill="#554f45" font-size="13">大马弄 12 号摊</text>
+    <text x="656" y="757" fill="#1c1b17" font-size="13" text-anchor="end">5.20 — 6.05</text>
+    <line x1="192" y1="775" x2="746" y2="775" stroke="#1c1b17" stroke-opacity="0.16"/>
+
+    <text x="192" y="809" fill="#1c1b17" font-family="Songti SC, SimSun, serif" font-size="24">青梅</text>
+    <text x="458" y="809" fill="#554f45" font-size="13">巷口 03 号摊</text>
+    <text x="656" y="809" fill="#1c1b17" font-size="13" text-anchor="end">5.16 — 5.31</text>
+    <line x1="192" y1="827" x2="746" y2="827" stroke="#1c1b17" stroke-opacity="0.16"/>
+
+    <text x="192" y="861" fill="#1c1b17" font-family="Songti SC, SimSun, serif" font-size="24">苋菜</text>
+    <text x="458" y="861" fill="#554f45" font-size="13">河坊街早市</text>
+    <text x="656" y="861" fill="#1c1b17" font-size="13" text-anchor="end">5.28 — 6.18</text>
+  </g>
+
+  <text x="746" y="888" fill="#6f6659" font-family="IBM Plex Mono, Consolas, monospace" font-size="11" text-anchor="end">03</text>
+
+  <!-- right page illustration -->
+  <g clip-path="url(#field-clip)">
+    <defs>
+      <clipPath id="field-clip">
+        <rect x="862" y="126" width="522" height="322"/>
+      </clipPath>
+    </defs>
+    <rect x="862" y="126" width="522" height="322" fill="#21352c"/>
+    <circle cx="1280" cy="210" r="68" fill="#a93e2c"/>
+    <path d="M850 390 C940 330 1010 380 1080 342 C1150 305 1230 342 1398 300 V480 H850 Z" fill="#16291f"/>
+    <g fill="none" stroke="#f1ebdf" stroke-opacity="0.55" stroke-width="2">
+      <path d="M848 423 C950 382 1012 430 1102 395 C1190 362 1270 406 1400 365"/>
+      <path d="M848 450 C950 408 1014 458 1104 423 C1192 390 1272 434 1400 393"/>
+      <path d="M848 477 C950 436 1015 486 1106 451 C1194 417 1274 462 1400 421"/>
+    </g>
+    <g fill="#f1ebdf" fill-opacity="0.55" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="11" letter-spacing="2">
+      <text x="882" y="158">田 垄 · 五 月</text>
+      <text x="882" y="425">雨 后，第 一 茬 青 梅</text>
+    </g>
+  </g>
+  <rect x="862" y="126" width="522" height="322" fill="none" stroke="#1c1b17" stroke-width="2"/>
+
+  <text x="862" y="494" fill="#a93e2c" font-family="IBM Plex Mono, Consolas, monospace" font-size="11" letter-spacing="2">05 / 摊 主 的 一 句 话</text>
+  <text x="862" y="542" fill="#1c1b17" font-family="Songti SC, SimSun, serif" font-size="31" letter-spacing="-1">“小满前后，吃豆。</text>
+  <text x="862" y="581" fill="#1c1b17" font-family="Songti SC, SimSun, serif" font-size="31" letter-spacing="-1">再晚，就老了。”</text>
+  <text x="862" y="617" fill="#6f6659" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="12" letter-spacing="1">— 大马弄 12 号摊，王阿姨</text>
+
+  <line x1="862" y1="658" x2="1384" y2="658" stroke="#1c1b17" stroke-opacity="0.28"/>
+
+  <g fill="#554f45" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="13">
+    <text x="862" y="691">本期没有餐厅推荐，也没有“必吃榜”。</text>
+    <text x="862" y="715">只有几位摊主的名字、每天的出摊时间，</text>
+    <text x="862" y="739">和一张被雨水打湿又重新写过的价签。</text>
+    <text x="862" y="763">如果你路过，替我们问一声好。</text>
+  </g>
+
+  <!-- right page margin -->
+  <text x="1384" y="812" fill="#1c1b17" font-family="Songti SC, SimSun, serif" font-size="18" text-anchor="end">小满，未满，刚刚好。</text>
+  <line x1="1104" y1="830" x2="1384" y2="830" stroke="#a93e2c" stroke-width="1.5"/>
+  <text x="1384" y="858" fill="#6f6659" font-family="IBM Plex Mono, Consolas, monospace" font-size="11" text-anchor="end">04</text>
+
+  <!-- page edge details -->
+  <g fill="none" stroke="#1c1b17" stroke-opacity="0.35">
+    <path d="M140 888 H168"/>
+    <path d="M798 888 H826"/>
+    <path d="M1230 888 H1258"/>
+  </g>
+</svg>

@@ -1,0 +1,204 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" role="img" aria-labelledby="title desc">
+  <title id="title">拾光地图 · 杭州老城步行界面</title>
+  <desc id="desc">浅色界面上的一张墨绿色老城地图，砖红色路线串起四个巷子故事。</desc>
+
+  <rect width="1600" height="1000" fill="#e8dfd0"/>
+
+  <!-- top bar -->
+  <rect x="0" y="0" width="1600" height="104" fill="#f1ebdf"/>
+  <line x1="0" y1="104" x2="1600" y2="104" stroke="#1c1b17" stroke-width="2"/>
+
+  <g aria-hidden="true">
+    <rect x="64" y="35" width="28" height="34" fill="none" stroke="#1c1b17" stroke-width="2"/>
+    <rect x="65" y="36" width="8.6" height="32" fill="#f1ebdf"/>
+    <rect x="73.6" y="36" width="8.6" height="32" fill="#21352c"/>
+    <rect x="82.2" y="36" width="8.6" height="32" fill="#a93e2c"/>
+  </g>
+  <text x="112" y="62" fill="#1c1b17" font-family="Songti SC, SimSun, serif" font-size="38" letter-spacing="2">拾光地图</text>
+  <text x="112" y="82" fill="#6f6659" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="11" letter-spacing="3">步 行 · 听 见 · 杭 州</text>
+
+  <g font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="15" fill="#554f45" letter-spacing="2">
+    <text x="690" y="59">老城</text>
+    <text x="780" y="59">运河</text>
+    <text x="870" y="59">巷子</text>
+    <text x="960" y="59">声音</text>
+  </g>
+  <line x1="690" y1="77" x2="727" y2="77" stroke="#a93e2c" stroke-width="2"/>
+
+  <rect x="1230" y="31" width="306" height="39" fill="none" stroke="#554f45" stroke-width="1"/>
+  <text x="1248" y="57" fill="#6f6659" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="13">搜一条巷子</text>
+  <line x1="1462" y1="43" x2="1462" y2="58" stroke="#a93e2c" stroke-width="1.5"/>
+  <circle cx="1470" cy="49" r="8" fill="none" stroke="#a93e2c" stroke-width="1.5"/>
+
+  <!-- map -->
+  <rect x="40" y="128" width="1050" height="812" fill="#21352c"/>
+  <rect x="40" y="128" width="1050" height="812" fill="none" stroke="#1c1b17" stroke-width="2"/>
+
+  <g clip-path="url(#map-clip)">
+    <defs>
+      <clipPath id="map-clip">
+        <rect x="41" y="129" width="1048" height="810"/>
+      </clipPath>
+    </defs>
+
+    <!-- blocks -->
+    <g fill="#16291f">
+      <rect x="70" y="167" width="186" height="126"/>
+      <rect x="286" y="167" width="151" height="90"/>
+      <rect x="468" y="167" width="230" height="142"/>
+      <rect x="733" y="167" width="186" height="105"/>
+      <rect x="949" y="167" width="112" height="158"/>
+      <rect x="70" y="326" width="128" height="184"/>
+      <rect x="226" y="326" width="160" height="115"/>
+      <rect x="414" y="342" width="156" height="140"/>
+      <rect x="600" y="342" width="123" height="100"/>
+      <rect x="752" y="334" width="221" height="144"/>
+      <rect x="1001" y="348" width="60" height="193"/>
+      <rect x="70" y="549" width="180" height="132"/>
+      <rect x="277" y="542" width="154" height="111"/>
+      <rect x="457" y="526" width="200" height="152"/>
+      <rect x="691" y="520" width="148" height="166"/>
+      <rect x="865" y="514" width="196" height="138"/>
+      <rect x="70" y="724" width="222" height="166"/>
+      <rect x="318" y="697" width="169" height="171"/>
+      <rect x="520" y="721" width="150" height="121"/>
+      <rect x="700" y="724" width="217" height="129"/>
+      <rect x="941" y="704" width="120" height="149"/>
+      <rect x="80" y="916" width="150" height="30"/>
+      <rect x="580" y="878" width="140" height="54"/>
+    </g>
+
+    <!-- water -->
+    <path d="M-20 875 C180 830 275 912 430 876 C550 848 588 779 760 764 C902 752 1016 812 1094 788"
+          fill="none" stroke="#f1ebdf" stroke-opacity="0.12" stroke-width="54"/>
+    <path d="M-20 875 C180 830 275 912 430 876 C550 848 588 779 760 764 C902 752 1016 812 1094 788"
+          fill="none" stroke="#f1ebdf" stroke-opacity="0.35" stroke-width="1.5"/>
+    <text x="96" y="857" fill="#f1ebdf" fill-opacity="0.56" font-family="Songti SC, SimSun, serif" font-size="17" letter-spacing="5" transform="rotate(-6 96 857)">运河支流</text>
+
+    <!-- minor streets -->
+    <g stroke="#f1ebdf" stroke-opacity="0.18" stroke-width="4">
+      <path d="M42 311 H1088"/>
+      <path d="M42 511 H1088"/>
+      <path d="M42 690 H1088"/>
+      <path d="M260 130 V940"/>
+      <path d="M450 130 V940"/>
+      <path d="M665 130 V940"/>
+      <path d="M848 130 V940"/>
+      <path d="M980 130 V940"/>
+    </g>
+
+    <!-- major streets -->
+    <g stroke="#f1ebdf" stroke-opacity="0.58" stroke-linecap="square">
+      <path d="M42 237 C255 244 462 218 688 241 C884 261 1010 241 1088 247" fill="none" stroke-width="11"/>
+      <path d="M229 130 C261 315 218 486 250 708 C263 808 245 882 254 940" fill="none" stroke-width="10"/>
+      <path d="M410 130 C391 325 430 492 409 680 C394 818 417 884 401 940" fill="none" stroke-width="9"/>
+      <path d="M62 627 C288 612 493 648 700 619 C851 599 962 627 1088 612" fill="none" stroke-width="9"/>
+      <path d="M706 129 C671 289 701 439 678 611 C659 752 695 864 672 940" fill="none" stroke-width="8"/>
+      <path d="M910 130 C940 280 903 450 925 619 C947 779 914 854 935 940" fill="none" stroke-width="8"/>
+    </g>
+
+    <!-- street labels -->
+    <g fill="#f1ebdf" fill-opacity="0.7" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="13" letter-spacing="3">
+      <text x="300" y="232">清 吟 巷</text>
+      <text x="530" y="230">五 柳 巷</text>
+      <text x="794" y="230">斗 富 巷</text>
+      <text x="77" y="620">大 马 弄</text>
+      <text x="753" y="608">望 江 路</text>
+      <text x="478" y="922">河 坊 街</text>
+    </g>
+
+    <!-- route -->
+    <path d="M265 821 C345 789 353 724 450 716 C561 707 586 640 676 613 C768 585 832 531 889 463 C930 414 973 386 1006 334"
+          fill="none" stroke="#a93e2c" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M265 821 C345 789 353 724 450 716 C561 707 586 640 676 613 C768 585 832 531 889 463 C930 414 973 386 1006 334"
+          fill="none" stroke="#f1ebdf" stroke-width="2" stroke-dasharray="1 15" stroke-linecap="round"/>
+
+    <!-- markers -->
+    <g font-family="IBM Plex Mono, Consolas, monospace" font-size="12" text-anchor="middle">
+      <circle cx="265" cy="821" r="11" fill="#f1ebdf"/>
+      <text x="265" y="825" fill="#1c1b17">起</text>
+      <circle cx="450" cy="716" r="10" fill="#f1ebdf"/>
+      <text x="450" y="720" fill="#1c1b17">02</text>
+      <circle cx="676" cy="613" r="10" fill="#f1ebdf"/>
+      <text x="676" y="617" fill="#1c1b17">03</text>
+      <circle cx="889" cy="463" r="10" fill="#f1ebdf"/>
+      <text x="889" y="467" fill="#1c1b17">04</text>
+    </g>
+    <circle cx="1006" cy="334" r="19" fill="#a93e2c" stroke="#f1ebdf" stroke-width="3"/>
+    <circle cx="1006" cy="334" r="6" fill="#f1ebdf"/>
+    <text x="1036" y="330" fill="#f1ebdf" font-family="Songti SC, SimSun, serif" font-size="27">大马弄</text>
+    <text x="1036" y="351" fill="#f1ebdf" fill-opacity="0.65" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="12" letter-spacing="1">正在听 · 01</text>
+
+    <!-- map labels / compass -->
+    <g transform="translate(985 850)">
+      <circle cx="0" cy="0" r="33" fill="none" stroke="#f1ebdf" stroke-opacity="0.45"/>
+      <path d="M0 -23 L7 7 L0 2 L-7 7 Z" fill="#f1ebdf"/>
+      <text x="0" y="-39" fill="#f1ebdf" fill-opacity="0.6" font-family="IBM Plex Mono, Consolas, monospace" font-size="10" text-anchor="middle">N</text>
+    </g>
+
+    <!-- map summary -->
+    <g transform="translate(68 861)">
+      <rect x="0" y="0" width="318" height="53" fill="#f1ebdf"/>
+      <rect x="0" y="0" width="6" height="53" fill="#a93e2c"/>
+      <text x="22" y="22" fill="#1c1b17" font-family="Songti SC, SimSun, serif" font-size="19">一条可以走的路线</text>
+      <text x="22" y="41" fill="#6f6659" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="11" letter-spacing="1">2.6 km · 约 48 分钟 · 4 个故事</text>
+    </g>
+  </g>
+
+  <!-- story panel -->
+  <rect x="1110" y="128" width="450" height="812" fill="#f1ebdf"/>
+  <rect x="1110" y="128" width="450" height="812" fill="none" stroke="#1c1b17" stroke-width="2"/>
+
+  <text x="1142" y="179" fill="#a93e2c" font-family="IBM Plex Mono, Consolas, monospace" font-size="11" letter-spacing="2">01 / 巷 子 故 事</text>
+  <text x="1142" y="247" fill="#1c1b17" font-family="Songti SC, SimSun, serif" font-size="58" letter-spacing="-2">大马弄</text>
+  <text x="1142" y="277" fill="#554f45" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="15" letter-spacing="2">早市，六点十七分。</text>
+
+  <line x1="1142" y1="308" x2="1528" y2="308" stroke="#1c1b17" stroke-opacity="0.26"/>
+
+  <text x="1142" y="348" fill="#1c1b17" font-family="Songti SC, SimSun, serif" font-size="24" letter-spacing="1">“我在这里住了三十七年，</text>
+  <text x="1142" y="381" fill="#1c1b17" font-family="Songti SC, SimSun, serif" font-size="24" letter-spacing="1">这条巷子，比我记得的更早。”</text>
+
+  <g transform="translate(1142 419)">
+    <rect x="0" y="0" width="42" height="42" fill="#a93e2c"/>
+    <path d="M16 13 L29 21 L16 29 Z" fill="#f1ebdf"/>
+    <text x="56" y="18" fill="#1c1b17" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="12" letter-spacing="1">听 王阿姨讲 02:14</text>
+    <text x="56" y="36" fill="#6f6659" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="11">生于 1962 年 · 大马弄</text>
+  </g>
+
+  <line x1="1142" y1="492" x2="1528" y2="492" stroke="#1c1b17" stroke-opacity="0.26"/>
+
+  <g fill="#554f45" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="13" line-height="1.8">
+    <text x="1142" y="525">天还没亮透，摊子已经摆到了路中间。</text>
+    <text x="1142" y="548">卖蚕豆的、修伞的、拎着鸟笼路过的，</text>
+    <text x="1142" y="571">都在这里停一停。王阿姨说，巷子</text>
+    <text x="1142" y="594">每天的样子都差不多，可每天又都不一样。</text>
+  </g>
+
+  <g transform="translate(1142 650)">
+    <text x="0" y="0" fill="#6f6659" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="10" letter-spacing="2">其 他 故 事</text>
+    <line x1="0" y1="15" x2="386" y2="15" stroke="#1c1b17" stroke-opacity="0.26"/>
+    <circle cx="6" cy="42" r="4" fill="#a93e2c"/>
+    <text x="24" y="47" fill="#1c1b17" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="14">五柳巷 · 河边的一把竹椅</text>
+    <text x="386" y="47" fill="#6f6659" font-family="IBM Plex Mono, Consolas, monospace" font-size="10" text-anchor="end">03:08</text>
+    <line x1="0" y1="66" x2="386" y2="66" stroke="#1c1b17" stroke-opacity="0.16"/>
+    <circle cx="6" cy="93" r="4" fill="#1c1b17"/>
+    <text x="24" y="98" fill="#1c1b17" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="14">斗富巷 · 修伞的人</text>
+    <text x="386" y="98" fill="#6f6659" font-family="IBM Plex Mono, Consolas, monospace" font-size="10" text-anchor="end">01:52</text>
+    <line x1="0" y1="117" x2="386" y2="117" stroke="#1c1b17" stroke-opacity="0.16"/>
+  </g>
+
+  <g transform="translate(1142 824)">
+    <rect x="0" y="0" width="386" height="66" fill="none" stroke="#1c1b17" stroke-opacity="0.35"/>
+    <text x="18" y="26" fill="#1c1b17" font-family="Songti SC, SimSun, serif" font-size="17">下一站：五柳巷</text>
+    <text x="18" y="47" fill="#6f6659" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="11">步行 6 分钟 · 经过一座小桥</text>
+    <text x="348" y="39" fill="#a93e2c" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="19">→</text>
+  </g>
+
+  <!-- registration details -->
+  <g aria-hidden="true" fill="none" stroke="#1c1b17" stroke-opacity="0.42">
+    <path d="M40 70 V40 H70"/>
+    <path d="M1530 40 H1560 V70"/>
+    <path d="M40 930 V960 H70"/>
+    <path d="M1530 960 H1560 V930"/>
+  </g>
+</svg>

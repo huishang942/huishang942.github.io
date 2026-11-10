@@ -3,51 +3,333 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>沈知远 · 个人主页</title>
-  <meta name="description" content="沈知远的个人主页：在设计与代码之间，做有温度的数字产品。">
+  <title>绘商 · 个人主页</title>
+  <meta name="description" content="绘商，浙江大学 MSE 学生。喜欢用 Python 和 Dify 做点东西。先认识一下，再看看作品，最后拿走一份关于信息差的清单。">
   <meta name="theme-color" content="#f1ebdf">
-  <meta property="og:title" content="沈知远 · 个人主页">
-  <meta property="og:description" content="在秩序与意外之间，做有温度的数字产品。">
+  <meta property="og:title" content="绘商 · 个人主页">
+  <meta property="og:description" content="我，我做的事，我读的世界。三个入口，随便挑一个。">
   <meta property="og:type" content="website">
 
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-  <link rel="stylesheet" href="assets/fonts.css">
+  <link rel="stylesheet" href="../assets/fonts.css">
   <link rel="stylesheet" href="assets/styles.css">
-
-  <script>
-    // 在样式加载前恢复夜读偏好，避免闪白
-    (function () {
-      try {
-        if (localStorage.getItem("fieldnotes-theme") === "night") {
-          document.documentElement.setAttribute("data-theme", "night");
-          var meta = document.querySelector('meta[name="theme-color"]');
-          if (meta) meta.setAttribute("content", "#151612");
-        }
-      } catch (error) {}
-    })();
-  </script>
+  <script src="assets/app.js" defer></script>
 </head>
 <body>
+  <!--
+    内容修改入口：
+    · 页面标题与 SEO → <head> 的 title / description / og:*
+    · 人物资料 → 搜索 class="profile-data"，或看下方“个人资料”注释
+    · 首页三道门 → class="doors"
+    · 作品 → id="work" 里的 .work-list
+    · 信息源 → id="sources" 里的 .source-list
+    · 全局姓名 → 搜索“绘商”；拉丁名在 .profile-latin
+  -->
   <a class="skip-link" href="#main">跳到正文</a>
-  <div class="grain" aria-hidden="true"></div>
 
-  <header class="masthead" id="masthead"></header>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#top" aria-label="绘商，回到页面顶部">
+        <span class="brand-mark" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </span>
+        <span class="brand-name">绘商</span>
+        <span class="brand-sub">个人主页</span>
+      </a>
 
-  <main id="main" tabindex="-1"></main>
-
-  <footer class="site-footer" id="site-footer"></footer>
-
-  <div class="project-preview" id="project-preview" aria-hidden="true"></div>
-  <div class="toast" id="toast" role="status" aria-live="polite"></div>
-
-  <noscript>
-    <div class="noscript">
-      <p>这个页面用一点 JavaScript 来排版。</p>
-      <p>请开启 JavaScript 后重新载入，即可阅读。</p>
+      <nav class="site-nav" aria-label="分区导航">
+        <a href="#about" data-nav="about">认识</a>
+        <a href="#work" data-nav="work">作品</a>
+        <a href="#sources" data-nav="sources">信息</a>
+      </nav>
     </div>
-  </noscript>
+  </header>
 
-  <script src="content.js" defer></script>
-  <script src="app.js" defer></script>
+  <main id="main" tabindex="-1">
+    <!-- 首页：三道门。示例内容可在本区块和下列各 section 中直接替换。 -->
+    <section class="home" id="top" aria-labelledby="home-title">
+      <div class="home-head">
+        <h1 class="home-title" id="home-title">
+          <span>我，</span><span>我做的事，</span><span>我读的世界。</span>
+        </h1>
+        <p class="home-intro">
+          我是绘商，在浙江大学读 MSE。这里没有一份完整的简历，只有三样我确定的东西：一点自我介绍，几件做过的作品，和一些我真正常开的信息源。
+        </p>
+      </div>
+
+      <nav class="doors" aria-label="主要内容入口">
+        <article class="door door--about">
+          <a class="door-hit" href="#about" aria-labelledby="door-about-title"></a>
+          <p class="door-index"><span class="door-no">01</span><span>关于</span></p>
+          <h2 class="door-title" id="door-about-title">先认识一下</h2>
+          <p class="door-copy">一个在紫金港读书的人，和他随身带着的几样东西。</p>
+          <p class="door-cue" aria-hidden="true"><span>推门，认识我</span><span class="cue-rule"></span></p>
+        </article>
+
+        <article class="door door--work">
+          <a class="door-hit" href="#work" aria-labelledby="door-work-title"></a>
+          <p class="door-index"><span class="door-no">02</span><span>作品</span></p>
+          <h2 class="door-title" id="door-work-title">我的作品集</h2>
+          <p class="door-copy">几个从问题开始，最后变成网站、书和界面的项目。</p>
+          <p class="door-cue" aria-hidden="true"><span>推门，看作品</span><span class="cue-rule"></span></p>
+        </article>
+
+        <article class="door door--sources">
+          <a class="door-hit" href="#sources" aria-labelledby="door-sources-title"></a>
+          <p class="door-index"><span class="door-no">03</span><span>信息</span></p>
+          <h2 class="door-title" id="door-sources-title">世界是信息差</h2>
+          <p class="door-copy">几个我反复打开的信息源，按类型放好。</p>
+          <p class="door-cue" aria-hidden="true"><span>推门，拿信息</span><span class="cue-rule"></span></p>
+        </article>
+      </nav>
+    </section>
+
+    <!-- 01 先认识一下 -->
+    <section class="chapter about" id="about" tabindex="-1" aria-labelledby="about-title">
+      <div class="chapter-inner">
+        <header class="about-head">
+          <p class="chapter-no">01</p>
+          <div class="about-heading">
+            <h2 id="about-title">先认识一下</h2>
+            <p class="about-lede">
+              我是绘商，19 岁，在浙江大学读 MSE。平时用 Python 和 Dify 做点小东西，也喜欢把复杂的事拆开，再用更清楚的方式放回去。
+            </p>
+          </div>
+        </header>
+
+        <!-- 个人资料：姓名 / 年龄 / 单位 / 居住地 / 兵器 / 邮箱 -->
+        <div class="profile">
+          <div class="profile-name-wrap">
+            <p class="profile-label">姓名</p>
+            <h3 class="profile-name">绘商</h3>
+            <p class="profile-latin">Hui Shang</p>
+            <span class="crop-mark" aria-hidden="true"></span>
+          </div>
+
+          <div class="profile-data">
+            <dl class="facts">
+              <div class="fact">
+                <dt>年龄</dt>
+                <dd>19</dd>
+              </div>
+              <div class="fact">
+                <dt>单位</dt>
+                <dd>浙江大学MSE</dd>
+              </div>
+              <div class="fact">
+                <dt>居住地</dt>
+                <dd>杭州 · 紫金港</dd>
+              </div>
+              <div class="fact">
+                <dt>兵器</dt>
+                <dd>Python、Dify</dd>
+              </div>
+            </dl>
+
+            <div class="email-block">
+              <p class="profile-label">邮箱</p>
+              <a class="profile-email" href="mailto:3187534783@qq.com">
+                <span>3187534783@qq.com</span>
+                <span class="email-arrow" aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 一些心里话：大引语 + 两段正文 -->
+        <div class="thoughts">
+          <div class="thoughts-side">
+            <h3>一些心里话</h3>
+            <span class="crop-mark crop-mark--small" aria-hidden="true"></span>
+          </div>
+          <div class="thoughts-main">
+            <blockquote class="thought-quote">我不太相信一眼就能看懂的人，也不太相信一眼就能看懂的作品。</blockquote>
+            <div class="thought-body">
+              <p>真正有意思的部分，通常要相处久了才会露出来。做作品也一样：先有一个模糊的念头，然后反复改，直到它自己站住。</p>
+              <p>这个网站不是简历，更像一张摊开的桌子。你可以先看看我是谁，再翻翻我做过的事，最后拿走几样我正在读的东西。能在这里遇见，就算认识过了。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 02 我的作品集。示例作品链接与截图均可替换。 -->
+    <section class="chapter work" id="work" tabindex="-1" aria-labelledby="work-title">
+      <div class="chapter-inner">
+        <header class="work-head">
+          <p class="chapter-no">02</p>
+          <h2 id="work-title">我的作品集</h2>
+          <p class="work-lede">每件都从一个没被回答的问题开始，后来长成了它自己的样子。</p>
+        </header>
+
+        <ol class="work-list">
+          <li class="work-card work-card--a">
+            <a class="work-hit" href="https://example.com/?project=shiguang" target="_blank" rel="noopener noreferrer"
+               aria-label="拾光地图，在新标签页打开"></a>
+            <figure class="work-plate">
+              <div class="work-image">
+                <img src="assets/works/work-shiguang.svg" width="1600" height="1000"
+                     alt="拾光地图项目截图：浅色地图界面，一条砖红色步行路线穿过杭州老城区。">
+              </div>
+            </figure>
+            <div class="work-copy">
+              <p class="work-type">城市文化网站 / 设计开发</p>
+              <h3 class="work-title">拾光地图</h3>
+              <p class="work-summary">把杭州老城区的三十条巷子做成一张可以走、可以听的地图。每个转角都有一段居民自己讲的故事。</p>
+              <p class="work-cue" aria-hidden="true"><span>访问项目</span><span class="cue-arrow">↗</span></p>
+            </div>
+          </li>
+
+          <li class="work-card work-card--b">
+            <a class="work-hit" href="https://example.com/?project=xiaoman" target="_blank" rel="noopener noreferrer"
+               aria-label="小满，在新标签页打开"></a>
+            <figure class="work-plate">
+              <div class="work-image">
+                <img src="assets/works/work-xiaoman.svg" width="1600" height="1000"
+                     alt="小满项目截图：一本摊开的节气小志，红色日轮与绿色田垄铺在纸页上。">
+              </div>
+            </figure>
+            <div class="work-copy">
+              <p class="work-type">独立出版 / 编辑设计</p>
+              <h3 class="work-title">小满</h3>
+              <p class="work-summary">一本按节气出版的菜市场小志。没有餐厅推荐，只有摊主、时令和一张张被翻旧的手写价签。</p>
+              <p class="work-cue" aria-hidden="true"><span>访问项目</span><span class="cue-arrow">↗</span></p>
+            </div>
+          </li>
+
+          <li class="work-card work-card--c">
+            <a class="work-hit" href="https://example.com/?project=liubai" target="_blank" rel="noopener noreferrer"
+               aria-label="留白，在新标签页打开"></a>
+            <figure class="work-plate">
+              <div class="work-image">
+                <img src="assets/works/work-liubai.svg" width="1600" height="1000"
+                     alt="留白项目截图：独立书店的座位预约界面，左侧是日期，右侧是座位图。">
+              </div>
+            </figure>
+            <div class="work-copy">
+              <p class="work-type">产品界面 / 交互设计</p>
+              <h3 class="work-title">留白</h3>
+              <p class="work-summary">给独立书店做的一套活动与座位预约工具。删掉所有不必要的步骤，让订座像在店里挑一个位置一样自然。</p>
+              <p class="work-cue" aria-hidden="true"><span>访问项目</span><span class="cue-arrow">↗</span></p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 03 世界是信息差 -->
+    <section class="chapter sources" id="sources" tabindex="-1" aria-labelledby="sources-title">
+      <div class="chapter-inner sources-grid">
+        <header class="sources-head">
+          <p class="chapter-no">03</p>
+          <h2 id="sources-title">世界是信息差</h2>
+          <p class="source-quote">信息不<span class="nobr">稀缺</span>，<span class="nobr">稀缺</span>的是把不同来源放在一起看的人。</p>
+          <p class="source-note">这里不是推荐清单，只是我最近真的会打开的入口。</p>
+        </header>
+
+        <ul class="source-list">
+          <li>
+            <a class="source-row" href="https://www.are.na/" target="_blank" rel="noopener noreferrer">
+              <span class="source-main">
+                <span class="source-name">Are.na</span>
+                <span class="source-detail">
+                  <span class="source-type">灵感资料库</span>
+                  <span class="source-domain">are.na</span>
+                </span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+              <span class="sr-only">（在新标签页打开）</span>
+            </a>
+          </li>
+          <li>
+            <a class="source-row" href="https://www.itsnicethat.com/" target="_blank" rel="noopener noreferrer">
+              <span class="source-main">
+                <span class="source-name">It's Nice That</span>
+                <span class="source-detail">
+                  <span class="source-type">视觉文化</span>
+                  <span class="source-domain">itsnicethat.com</span>
+                </span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+              <span class="sr-only">（在新标签页打开）</span>
+            </a>
+          </li>
+          <li>
+            <a class="source-row" href="https://www.awwwards.com/" target="_blank" rel="noopener noreferrer">
+              <span class="source-main">
+                <span class="source-name">Awwwards</span>
+                <span class="source-detail">
+                  <span class="source-type">网页设计</span>
+                  <span class="source-domain">awwwards.com</span>
+                </span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+              <span class="sr-only">（在新标签页打开）</span>
+            </a>
+          </li>
+          <li>
+            <a class="source-row" href="https://aeon.co/" target="_blank" rel="noopener noreferrer">
+              <span class="source-main">
+                <span class="source-name">Aeon</span>
+                <span class="source-detail">
+                  <span class="source-type">思想长读</span>
+                  <span class="source-domain">aeon.co</span>
+                </span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+              <span class="sr-only">（在新标签页打开）</span>
+            </a>
+          </li>
+          <li>
+            <a class="source-row" href="https://news.ycombinator.com/" target="_blank" rel="noopener noreferrer">
+              <span class="source-main">
+                <span class="source-name">Hacker News</span>
+                <span class="source-detail">
+                  <span class="source-type">技术现场</span>
+                  <span class="source-domain">news.ycombinator.com</span>
+                </span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+              <span class="sr-only">（在新标签页打开）</span>
+            </a>
+          </li>
+          <li>
+            <a class="source-row" href="https://sspai.com/" target="_blank" rel="noopener noreferrer">
+              <span class="source-main">
+                <span class="source-name">少数派</span>
+                <span class="source-detail">
+                  <span class="source-type">数字生活</span>
+                  <span class="source-domain">sspai.com</span>
+                </span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+              <span class="sr-only">（在新标签页打开）</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-lead">
+        <p class="footer-label">还有话想说</p>
+        <a class="footer-email" href="mailto:3187534783@qq.com">
+          <span>写信给我</span>
+          <span class="footer-email-address">3187534783@qq.com</span>
+          <span class="footer-email-arrow" aria-hidden="true">↗</span>
+        </a>
+      </div>
+      <div class="footer-side">
+        <p>绘商 · 杭州 · 2026</p>
+        <a class="back-top" href="#top">回到开头 <span aria-hidden="true">↑</span></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 绘商</p>
+      <p>手工排版，HTML / CSS / JavaScript</p>
+    </div>
+  </footer>
 </body>
 </html>
