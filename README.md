@@ -1,6 +1,6 @@
 # 绘商 · 个人主页（三联门版本）
 
-原生 HTML / CSS / JavaScript，无构建步骤、无第三方脚本。当前是独立预览版，根目录旧站尚未替换。
+原生 HTML / CSS / JavaScript，无构建步骤、无第三方脚本。当前已部署在 GitHub Pages 根目录：<https://huishang942.github.io/>
 
 ## 本地预览
 
@@ -10,9 +10,9 @@
 python -m http.server 8000
 ```
 
-然后打开：<http://127.0.0.1:8000/personal-site/>
+然后打开：<http://127.0.0.1:8000/>
 
-也可以直接双击 `personal-site/index.html`。字体复用根目录的 `assets/fonts.css`，因此不要单独移动本目录。
+也可以直接双击 `index.html`。字体、样式与脚本都在仓库内的 `assets/` 下，不需要额外服务。
 
 ## 内容在哪里：没有单独的配置文件
 
@@ -71,21 +71,15 @@ python -m http.server 8000
 
 这些截图是静态文件，**不会随着 `index.html` 的内容修改自动更新**；定稿后以浏览器中的实际页面为准。
 
-## 迁移到根目录时
+## 部署
 
-当前字体引用是：
+根目录就是 GitHub Pages 的发布目录：把改动提交并推送到 `main` 后，GitHub Pages 会重新发布。
 
-```html
-<link rel="stylesheet" href="../assets/fonts.css">
-```
+发布后如果看到的还是无样式骨架，先强制刷新（Windows `Ctrl+F5`，macOS `Cmd+Shift+R`）或用无痕窗口打开；GitHub Pages 的 CDN 和浏览器缓存都可能延迟。确认以下资源返回 200：
 
-提升到仓库根目录后改为：
-
-```html
-<link rel="stylesheet" href="assets/fonts.css">
-```
-
-并沿用根目录已有的 `assets/fonts.css`、`assets/fonts/`，不要重复下载字体。替换根站前建议先确认预览截图与浏览器页面一致。
+- `https://huishang942.github.io/assets/styles.css`
+- `https://huishang942.github.io/assets/app.js`
+- `https://huishang942.github.io/assets/fonts.css`
 
 ## 行为与检查
 
